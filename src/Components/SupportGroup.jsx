@@ -16,7 +16,7 @@ function SupportGroup({ support_group }) {
         </a>
       </td>
       <td>
-        <Link to={`/support_groups/${support_group.id}`}>✌🏾</Link>
+        <Link to={`/support_groups/${support_group.id}`}></Link>
       </td>
     </tr>
   );
