@@ -38,7 +38,7 @@ function SupportGroupEditForm() {
       method: "PUT",
       body: JSON.stringify(supportGroup),
       headers: {
-        "Group-Type": "application/json",
+        "Content-Type": "application/json",
       },
     })
       .then((response) => {
@@ -72,7 +72,7 @@ function SupportGroupEditForm() {
           type="text"
           onChange={handleTextChange}
           placeholder="Name of Support Group"
-          require
+          required
         />
         <label htmlFor="meeting_time">Meeting Time:</label>
         <input
@@ -97,7 +97,7 @@ function SupportGroupEditForm() {
         <input
           id="isFavorite"
           type="checkbox"
-          onChange={handleCheckboxCange}
+          onChange={handleCheckboxChange}
           checked={supportGroup.is_favorite}
         />
         <label htmlFor="description">Description:</label>
